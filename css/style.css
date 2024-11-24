@@ -1,0 +1,480 @@
+/* Basic navbar styling */
+.navbar .nav-link {
+  position: relative;
+  padding: 0 !important;
+}
+
+
+.nav-link::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: width 0.5s;
+}
+.nav-link:hover::before {
+  width: 100%;
+}
+
+
+nav li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+li {
+  padding-left: 19px;
+}
+/* Hero Section Background */
+
+#Home {
+  background-image: url(../imgs/bg.jpg);
+  background-position: 0px 0px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  overflow: hidden;
+}
+
+/* Logo */
+.logo {
+  font-weight: 800;
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+
+
+
+
+/* Heading Styles */
+#Home h5 {
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.contant h3 {
+  font-weight: 800;
+  font-size: 30px;
+}
+#Home h1 {
+  font-weight: 200;
+  font-size: 60px;
+}
+
+#Home span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: white;
+}
+
+
+/* Social Media Icons */
+#Home .icon {
+  margin-top: 20px;
+}
+
+#Home .icon .social-link {
+ 
+  color: white;
+  font-size: 20px;
+
+}
+#Home .icon span {
+  display: inline-block;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* General Section Padding */
+.section-padding {
+  padding: 100px 0;
+}
+
+.image::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+img {
+  vertical-align: middle;
+}
+.main-color {
+  color: rgb(52, 52, 52);
+}
+.contant .text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contant p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(116, 129, 130);
+  line-height: 1.6;
+  margin-top: 20px;
+  margin: 0;
+}
+/* Progress Bars */
+
+.progress {
+  border-radius: 5px;
+  background: #f7f7f7;
+
+  overflow: hidden;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.progress-bar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.progress-bar span {
+  color: #ffffff;
+}
+
+.progress-percent {
+  padding-right: 10px;
+}
+
+/* Buttons */
+.buttons .btn {
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.btn-outline-dark:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+/* section */
+.section-head h3:after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+.section-head h3 {
+  font-weight: 900;
+  font-size: 40px;
+  z-index: 4;
+}
+
+#Services .i-con {
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.bg-gray {
+  background-color: #f7f7f7;
+}
+
+.item {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 80px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+#Services .item:hover .i-con {
+  background-color: #1c1c1c;
+  color: #eee;
+}
+.item h6 {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.item p {
+  word-spacing: 2px;
+  font-size: 14px;
+}
+/* works */
+
+.portfolio .item-img-overlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  opacity: 0;
+  z-index: 2;
+  transform: translateY(10px);
+  background: rgba(255, 255, 255, 0.95);
+  transition: 0.5s;
+}
+.portfolio .item-img:hover .item-img-overlay {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.portfolio .item-img:hover h6, .portfolio .item-img:hover .icons {
+  transform: translateY(0px);
+}
+
+
+  .portfolio .item-img h6 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px;
+    transform: translateY(-15px);
+    transition: 0.5s;
+
+}
+.portfolio .item-img:hover h6, .portfolio .item-img:hover .icons {
+  transform: translateY(0px);
+}
+.portfolio .item-img .icon i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  color: rgb(238, 238, 238);
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(17, 17, 17);
+  border-image: initial;
+  background: rgb(17, 17, 17);
+}
+
+.portfolio .item-img .icon i:hover {
+  color: rgb(0, 0, 0);
+  background: transparent;
+}
+.counter span,
+h3 {
+  color: rgb(52, 52, 52);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+.counter p {
+  color: rgb(116, 129, 130);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+.counter i {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgb(52, 52, 52);
+}
+
+.person .footer {
+  background-color: rgb(91, 91, 91);
+}
+
+.image-carsouel img {
+  width: 100px;
+  height: 100px;
+}
+
+.carsouel-person p {
+  word-spacing: 2px;
+  line-height: 1.6;
+
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #748182;
+}
+.carsouel-person h6 {
+  color: rgb(52, 52, 52);
+}
+.carsouel-person span {
+  font-weight: 600;
+  font-size: 12px;
+  color: rgb(136, 136, 136);
+}
+#Clients button {
+  width: 12px;
+  border-radius: 50%;
+  height: 12px;
+  margin: 5px 7px;
+  transition: all 0.3;
+  background-color: rgb(136, 136, 136);
+}
+#Clients button:hover {
+  background-color: #869791;
+}
+.social {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  text-align: center;
+  inset: 5px;
+  opacity: 0;
+  transition: 0.5s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+.social ul li i {
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s;
+  margin-top: 30px;
+}
+.social li {
+  padding: 5px;
+}
+
+.social ul li :hover i {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+.person .image:hover img {
+  transform: scale(1.1);
+}
+.person .image:hover .social {
+  cursor: pointer;
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+/* contact */
+.item-contact i {
+  font-size: 25px;
+  margin-bottom: 15px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  color: rgb(52, 52, 52);
+  transition: all 0.5s;
+}
+.item-contact .icon:hover i {
+  color: #f4f4f4;
+  background-color: rgb(52, 52, 52);
+}
+
+.item-contact h6 {
+  color: rgb(52, 52, 52);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.item-contact p {
+  color: rgb(116, 129, 130);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form .submit-btn {
+  background-color: rgb(52, 52, 52);
+  color: #f4f4f4;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.contact-form .submit-btn:hover {
+  background-color: #f4f4f4;
+  color: rgb(52, 52, 52);
+  border: 1px solid rgb(52, 52, 52);
+}
+
+footer {
+  background-color: #1c1c1c;
+}
+
+.portfolio .nav-tabs .nav-link {
+  border: none;
+}
+
+.portfolio .nav-link {
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+  margin: 0px -15px;
+}
+
+.portfolio .nav-link:hover {
+  color: rgb(34, 34, 34);
+}
+
+.portfolio .nav-item::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: width 0.5s;
+}
+
+.portfolio .nav-item:hover::before {
+  width: 100%;
+}
+
